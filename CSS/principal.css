@@ -1,0 +1,36 @@
+.logo_principal{
+  width: 25em;
+  margin-left: 10%;
+}
+
+.bar_sup{
+  background-color: #f68e35;
+  width: auto;
+  height: 50px;
+}
+
+.texto_central{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.texto_central_inf{
+  top: -15px;
+}
+
+.barra_central{
+
+}
+
+li {
+	display: inline-block;
+
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+head {
+	width: 33%
+}
