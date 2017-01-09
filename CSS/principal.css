@@ -27,37 +27,103 @@ header {
 	border: 1px solid black;
 	width: 100%;
 	height: 150px;
+	position: relative;
+	background-image: url(../IMG/waves_menu.png);
+	background-repeat: no-repeat;
 }
 
-/*logo*/
+/* logo media querie */
+
+@media (min-width: 400px){
+	.container-logo{
+		width: 20%;
+	}
+}
+
+@media (min-width: 1200px){
+	.container-logo{
+		width: 30%;
+	}
+}
+
 .container-logo{
 	float: left;
 	display: inline-block; 
-	border: 1px dashed black;
-	width: 30%;	
-	
-
 }
 
 .logo-principal{
 	width: 100%;
-	position: relative;
 	display: inline-block;
 }
+
+
+
+
+/*menu */
+.menu-principal {
+	margin-top: 3%;
+	margin-left: 10%;
+	float: left;
+	display: inline-block;
+
+}
+
 
 .menu-principal li{
 	display: inline-block;
-	padding: 10px;
 	font-size: 1.5em; 
+	padding: 20px;
 }
 
-.menu-principal{
-	float: left;
-	border: 1px solid black;
-	margin-top: 30px;
+@media (max-width: 600px){
+	.menu-principal {
+		padding: 1em;
+		margin: 0;
+
+		height: 100%;
+		width: 90%;
+		max-width: 320px;
+
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: -90%;
+
+		transition: left 0.3s ease-out;
+	}
+	.menu-ativo .menu-principal {
+		left: 0;
+	}
+
+	.menu-principal li {
+		padding: 1em 0;
+		width: 100%
+	}
+}
+
+
+.menu-principal li{
 	display: inline-block;
-
+	font-size: 1.5em; 
+	padding: 10px;
 }
+
+@media (max-width: 1000px){
+	.menu-principal li{
+	display: inline-block;
+	font-size: 1em; 
+	padding: 6px;
+}
+	
+}
+
+@media not all and (max-width: 600px){
+	.menu-abrir,
+	.menu-fechar {
+		display: none;
+	}
+}
+
 
 .banner-principal{
 	border: 1px solid black;
