@@ -66,12 +66,16 @@ header {
 }
 
 .container-logo{
+	position: relative;
 	float: left;
 	display: inline-block; 
 }
 
 .logo-principal{
+	
 	width: 100%;
+	padding-top: 5%;
+	padding-left: 5%;
 	display: inline-block;
 }
 
@@ -153,14 +157,22 @@ header {
 	
 }
 
-.texto-centro h4{
-	margin-left: 38%;
+.texto-centro h4, h5{
+	text-align: center;
 	padding-top: 5px;
-	text-decoration: bold;
+	
 }
 
-.texto-centro p{
-	text-align: center;
+.texto-centro h4{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: rgba(127, 127, 127, 0.5);
+
+}
+.texto-centro h5{
+	margin-top: -11px;
+	font-size: 1em;
+	color: rgba(127, 127, 127, 0.7);
 }
 
 
